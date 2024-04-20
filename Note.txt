@@ -1,0 +1,16 @@
+DB User - ia64744
+DB Pass - QUAFgAL4DvHMyCQp
+
+mongodb+srv://ia64744:QUAFgAL4DvHMyCQp@foodcrud.tiqnqzi.mongodb.net/
+
+
+        'FoodName': 'Crispy fried chicken on a plate with salad and carrot',
+
+
+
+
+        FoodCode: {type: String, required: true},
+        FoodImg: {type: String, required: true},
+        FoodCategory: {type: String, required: true},
+        FoodQTY: {type: String, required: true},
+        FoodPrice: {type: String, required: true},
