@@ -8,9 +8,9 @@ const App = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<HomePage/>} />
-                <Route path="/create" element={<CreatePage/>} />
-                <Route path="/update/:id" element={<UpdatePage/>} />
+                <Route path="https://crud-food-mern-assignment.vercel.app/" element={<HomePage/>} />
+                <Route path="https://crud-food-mern-assignment.vercel.app/create" element={<CreatePage/>} />
+                <Route path="https://crud-food-mern-assignment.vercel.app/update/:id" element={<UpdatePage/>} />
             </Routes>
         </BrowserRouter>
     );
