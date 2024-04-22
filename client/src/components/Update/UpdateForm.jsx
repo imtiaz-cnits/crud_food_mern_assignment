@@ -10,7 +10,7 @@ const UpdateForm = () => {
     let [Existing, setExisting] = useState(null);
 
     const ExistingInfo = async (id)=> {
-        let res = await axios.get(`/api/readByID/${id}`);
+        let res = await axios.get(`https://crud-food-mern-assignment.vercel.app/api/readByID/${id}`);
         setExisting(res.data['food'][0]);
     }
 
@@ -30,7 +30,7 @@ const UpdateForm = () => {
         let FoodQTY = formData.get('FoodQTY');
         let FoodPrice = formData.get('FoodPrice');
 
-        await axios.post(`/api/update/${id}`, {
+        await axios.post(`https://crud-food-mern-assignment.vercel.app/api/update/${id}`, {
             FoodName: FoodName,
             FoodCode: FoodCode,
             FoodImg: FoodImg,

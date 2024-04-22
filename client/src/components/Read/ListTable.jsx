@@ -14,12 +14,12 @@ const ListTable = () => {
     }, []);
 
     const ReadData = async ()=> {
-        let res = await axios.get( "/api/read" );
+        let res = await axios.get( "https://crud-food-mern-assignment.vercel.app/api/read" );
         SetData(res.data['food']);
     }
 
     const DeleteData = async (id) => {
-        await axios.get( `/api/delete/${id}` );
+        await axios.get( `https://crud-food-mern-assignment.vercel.app/api/delete/${id}` );
         await ReadData();
     }
 

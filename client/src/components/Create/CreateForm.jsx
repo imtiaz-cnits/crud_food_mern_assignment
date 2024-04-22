@@ -16,7 +16,7 @@ const CreateForm = () => {
         let FoodQTY = formData.get('FoodQTY');
         let FoodPrice = formData.get('FoodPrice');
 
-        await axios.post('/api/create', {
+        await axios.post('https://crud-food-mern-assignment.vercel.app/api/create', {
             FoodName: FoodName,
             FoodCode: FoodCode,
             FoodImg: FoodImg,
