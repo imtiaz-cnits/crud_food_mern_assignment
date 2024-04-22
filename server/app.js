@@ -10,7 +10,13 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 
 app.use(cookieParser());
-app.use(cors());
+app.use(cors(
+    {
+        origin: ['https://crud-food-mern-assignment.vercel.app/'],
+        methods: ['GET', 'POST'],
+        credentials: true
+    }
+));
 app.use(helmet());
 app.use(hpp());
 
