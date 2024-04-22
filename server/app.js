@@ -12,7 +12,7 @@ const path = require('path');
 app.use(cookieParser());
 app.use(cors(
     {
-        origin: ['https://crud-food-mern-assignment.vercel.app/'],
+        origin: ['https://cute-gecko-0f906f.netlify.app'],
         methods: ['GET', 'POST'],
         credentials: true
     }
