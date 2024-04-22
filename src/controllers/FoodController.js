@@ -23,6 +23,18 @@ exports.Read = async (req, res) => {
 }
 
 
+exports.ReadByID = async (req, res) => {
+    try {
+        let { id } = req.params;
+        let foodRead = await FoodModel.find({_id: id});
+        res.status(200).json({status: 'Success', message: 'Request Completed', food: foodRead});
+    }
+    catch (err) {
+        res.status(200).json({status: 'Failed', error: err});
+    }
+}
+
+
 exports.Update = async (req, res) => {
     try {
         let {id} = req.params;

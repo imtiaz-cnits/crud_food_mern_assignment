@@ -5,10 +5,9 @@ const router = express.Router();
 
 router.post('/create', FoodController.Create);
 router.get('/read', FoodController.Read);
+router.get('/readByID/:id', FoodController.ReadByID);
 router.post('/update/:id', FoodController.Update);
 router.get('/delete/:id', FoodController.Delete);
-
-
 
 
 module.exports = router;

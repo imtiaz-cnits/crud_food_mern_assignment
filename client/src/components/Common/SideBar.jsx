@@ -6,10 +6,10 @@ const SideBar = () => {
     return (
         <div className="sidebar">
             <div className="logo">
-                <a href="#">
+                <Link to="/">
                     <img src={logo} alt=""/>
                     <h4>CRUD Food</h4>
-                </a>
+                </Link>
             </div>
 
             <ul>
